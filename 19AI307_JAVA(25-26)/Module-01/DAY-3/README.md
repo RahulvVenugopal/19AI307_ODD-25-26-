@@ -25,8 +25,8 @@ To write a Java program using looping statements to print a right-angled triangl
  ```
 /*
 Program to implement variables and Operators using Java
-Developed by: KAAMESH M
-RegisterNumber: 212223040080
+Developed by:RAHUL V
+RegisterNumber: 212223040163
 */
 ```
 
