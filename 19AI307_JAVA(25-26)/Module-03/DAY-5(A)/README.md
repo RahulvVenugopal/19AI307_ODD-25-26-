@@ -17,8 +17,8 @@ To demonstrate accessing an inner class from an outer class in Java.
  ```
 /*
 Program to implement a InnerClass using Java
-Developed by: JIDHESH P
-RegisterNumber: 212223040078
+Developed by: RAHUL V
+RegisterNumber: 212223040163
 */
 ```
 
