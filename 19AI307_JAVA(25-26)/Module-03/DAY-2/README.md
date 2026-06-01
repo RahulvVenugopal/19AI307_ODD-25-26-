@@ -1,102 +1,85 @@
 # Ex.No:3(b) POLYMORPHISM
 
 ## QUESTION:
-Write a Java program that calculates the area of different shapes using method overloading. Create a class AreaCalculator with:
-
-area(int side) for square
-
-area(int length, int breadth) for rectangle
-
-area(double radius) for circle
-
-<img width="447" height="180" alt="image" src="https://github.com/user-attachments/assets/28afedde-02fe-4562-8c03-3310286a0ab0" />
-
-
+Write a Java program demonstrating method overriding. Create a class Animal with a method sound(). Subclass it as Dog, Cat, Cow, each overriding the sound() method.
 
 ## AIM:
-Create an AreaCalculator class using method overloading to calculate areas of a square, rectangle, and circle.
-
+To write a Java program that demonstrates method overriding using inheritance and polymorphism.
 
 ## ALGORITHM :
-1. Start and import Scanner.
-
-
-2. Create prog class with overloaded area() methods for square, rectangle, and         circle.
-
-
-3. Read side, length & breadth, and radius from the user.
-
-
-4. Call the appropriate area() method for each shape.
-
-
-5. Display the areas and end the program.
-
-
-
-
-
+1.	Create a base class Animal with a method sound().
+2.	Create subclasses Dog, Cat, and Cow that extend Animal.
+3.	Override the sound() method in each subclass to print specific sounds.
+4.	In main(), use an Animal reference to point to each subclass object.
+5.	Call the sound() method to demonstrate runtime polymorphism.
 
 
 ## PROGRAM:
  ```
 /*
-Program to implement a Polymorphism using Java
-Developed by: JIDHESH P
-RegisterNumber: 212223040078
+Program to implement variables and Operators using Java
+Developed by: KAAMESH M
+RegisterNumber: 212223040080
 */
 ```
 
 ## SOURCE CODE:
-
 ```
 import java.util.Scanner;
 
-class prog {
-
-    void area(int side) {
-        System.out.println("Area of square: " + (side * side));
+class Animal {
+    void sound() {
+        System.out.println("Unknown animal");
     }
+}
 
-    void area(int length, int breadth) {
-        System.out.println("Area of rectangle: " + (length * breadth));
+class Dog extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Dog barks");
     }
+}
 
-    void area(double radius) {
-        double result = Math.PI * radius * radius;
-        System.out.println("Area of circle: " + result);
+class Cat extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Cat meows");
     }
+}
 
+class Cow extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Cow moos");
+    }
+}
+
+public class prog {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        prog obj = new prog();
+        while (sc.hasNextLine()) {
+            String input = sc.nextLine().trim();
+            if (input.isEmpty()) continue;
 
-        int side = sc.nextInt();
-        obj.area(side);
-
-        int length = sc.nextInt();
-        int breadth = sc.nextInt();
-        obj.area(length, breadth);
-
-        double radius = sc.nextDouble();
-        obj.area(radius);
-
+            Animal a;
+            switch(input.toLowerCase()) {
+                case "dog": a = new Dog(); break;
+                case "cat": a = new Cat(); break;
+                case "cow": a = new Cow(); break;
+                default: a = new Animal();
+            }
+            a.sound();
+        }
         sc.close();
     }
 }
 ```
 
-
-
-
-
 ## OUTPUT:
-
-<img width="825" height="372" alt="image" src="https://github.com/user-attachments/assets/c42bf11f-b5fd-4d8a-83ed-5fa4850d2192" />
-
+<img width="1215" height="500" alt="image" src="https://github.com/user-attachments/assets/d08ba277-f28b-4af5-9ac8-8a8c71761ca5" />
 
 ## RESULT:
-The program displays the area of the chosen shape based on the input values.
+The program successfully demonstrates method overriding, showing different behaviors of the sound() method for different animal subclasses.
 
 
 
