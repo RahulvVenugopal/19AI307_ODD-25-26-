@@ -44,8 +44,8 @@ To write a Java program that uses conditional statements to determine the state 
 ```
 /*
 Program to implement variables and Operators using Java
-Developed by: KAAMESH M
-RegisterNumber: 212223040080
+Developed by:RAHUL V
+RegisterNumber: 212223040163
 */
 ```
 
