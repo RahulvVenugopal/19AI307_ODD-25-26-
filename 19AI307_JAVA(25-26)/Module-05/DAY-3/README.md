@@ -16,8 +16,8 @@ To count and display the total number of characters in a file using FileReader.
  ```
 /*
 Program to implement a InnerClass using Java
-Developed by: KAAMESH M
-RegisterNumber: 212223040080
+Developed by: RAHUL V
+RegisterNumber: 212223040163
 */
 ```
 
