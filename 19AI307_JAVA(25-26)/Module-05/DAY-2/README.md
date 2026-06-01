@@ -21,8 +21,8 @@ To demonstrate string compression and decompression using ByteArrayOutputStream,
  ```
 /*
 Program to implement a InnerClass using Java
-Developed by: KAAMESH M
-RegisterNumber: 212223040080
+Developed by: RAHUL V
+RegisterNumber: 212223040163
 */
 ```
 
