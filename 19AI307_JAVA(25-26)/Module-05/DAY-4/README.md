@@ -22,8 +22,8 @@ To read a thread name from the user and display the current thread’s name and 
  ```
 /*
 Program to implement a InnerClass using Java
-Developed by: KAAMESH M
-RegisterNumber: 212223040080
+Developed by: RAHUL V
+RegisterNumber: 212223040163
 */
 ```
 
