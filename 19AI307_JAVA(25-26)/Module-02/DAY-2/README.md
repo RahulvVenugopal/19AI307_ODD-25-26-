@@ -25,8 +25,8 @@ To write a Java program that demonstrates how primitive data is passed by value 
  ```
 /*
 Program to implement variables and Operators using Java
-Developed by: KAAMESH M
-RegisterNumber: 212223040080
+Developed by: RAHUL V
+RegisterNumber: 212223040163
 */
 
 ```
